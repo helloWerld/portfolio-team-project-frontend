@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full md:h-screen'>
-      <div className='hidden md:flex flex-col h-screen bg-black w-full justify-between items-center h-24'>
+      <div className='hidden md:flex flex-col bg-black h-screen w-full justify-between items-center h-24'>
         <div className='flex flex-col gap-4 mb-5 bg-black w-full px-5 py-5 text-white items-center rounded-3xl'>
           <h1 className='font-extrabold text-6xl text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-rose-600 w-fit'>RT</h1>
           <h1 className='font-bold text-xl text-center'>Russell Trzaska</h1>
@@ -17,7 +17,7 @@ const Navbar = () => {
         </div>
         <div className='flex flex-col text-lg text-white w-full text-center'>
           {menu.map((item, index) => (
-            <div className='text-gray-400 py-3 hover:text-white bg-black' key={index}>
+            <div className='text-gray-400 py-3 hover:text-white bg-black cursor-pointer' key={index}>
               <p>{item}</p>
             </div>
           ))}

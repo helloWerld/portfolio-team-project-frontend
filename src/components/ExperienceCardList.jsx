@@ -26,7 +26,7 @@ const ExperienceCardList = () => {
   const cardSliderRef = useRef(null);
 
   return (
-    <>
+    <div className='flex flex-col'>
       <div className='flex flex-row overflow-x-scroll scrollbar-hide gap-3 min-w-full transition duration-300 ease-in-out  scroll-smooth'  ref={cardSliderRef}>
         {jobs.map((job, i) => (
           <div className='min-w-fit fit border border-white p-6 rounded-2xl' key={i}>
@@ -38,10 +38,10 @@ const ExperienceCardList = () => {
         ))}
       </div>
       <div className='flex flex-row mt-8 justify-start gap-5'>
-        <AiOutlineCaretLeft className='text-2xl cursor-pointer' onClick={() => { cardSliderRef.current.scrollLeft -= 250 }} />
-        <AiOutlineCaretRight className='text-2xl cursor-pointer' onClick={() => { cardSliderRef.current.scrollLeft += 250 }} />
+        <AiOutlineCaretLeft className='text-4xl cursor-pointer rounded-full bg-transparent hover:bg-white hover:text-black pr-1' onClick={() => { cardSliderRef.current.scrollLeft -= 250 }} />
+        <AiOutlineCaretRight className='text-4xl cursor-pointer rounded-full bg-transparent hover:bg-white hover:text-black pl-1' onClick={() => { cardSliderRef.current.scrollLeft += 250 }} />
       </div>
-    </>
+    </div>
   )
 }
 

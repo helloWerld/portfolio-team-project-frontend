@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='flex flex-row w-full'>
+      <div className='flex flex-row w-full overflow-x-clip'>
         <div className='hidden md:flex md:w-2/12 2xl:w-1/12 fixed top-0 bottom-0 left-0'>
           <Navbar />
         </div>

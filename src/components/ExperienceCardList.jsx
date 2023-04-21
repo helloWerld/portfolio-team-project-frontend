@@ -27,7 +27,7 @@ const ExperienceCardList = () => {
 
   return (
     <div className='flex flex-col'>
-      <div className='flex flex-row overflow-x-scroll scrollbar-hide gap-3 min-w-full transition duration-300 ease-in-out  scroll-smooth'  ref={cardSliderRef}>
+      <div className='flex flex-row overflow-x-scroll scrollbar-hide gap-3 min-w-full transition duration-300 ease-in-out scroll-smooth'  ref={cardSliderRef}>
         {jobs.map((job, i) => (
           <div className='min-w-fit fit border border-white p-6 rounded-2xl' key={i}>
             <h2 className='font-mono text-xl'>{job.title}</h2>

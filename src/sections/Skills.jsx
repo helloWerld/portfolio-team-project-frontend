@@ -13,7 +13,7 @@ const Skills = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit orci sit amet convallis semper.
             </p>
           </div>
-          <div className='flex flex-col lg:w-1/2 text-white gap-8 mt-8'>
+          <div className='flex flex-col w-full lg:w-1/2 text-white gap-8 mt-8'>
             <SkillsBars />
             <ExperienceCardList />
         </div>

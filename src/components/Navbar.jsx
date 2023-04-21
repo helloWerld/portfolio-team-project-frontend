@@ -22,10 +22,10 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className='flex flex-row mb-24 gap-3 text-white hover:cursor-pointer'>
-          <AiFillLinkedin size={24} />
-          <AiFillGithub size={24}/>
-          <AiFillYoutube size={24}/>
+        <div className='flex flex-row mb-24 gap-3 text-2xl text-white hover:cursor-pointer'>
+          <AiFillLinkedin className='hover:scale-125'/>
+          <AiFillGithub className='hover:scale-125'/>
+          <AiFillYoutube className='hover:scale-125'/>
         </div>
       </div>
     </div>

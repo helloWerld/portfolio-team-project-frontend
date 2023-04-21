@@ -1,7 +1,6 @@
 import React from 'react';
 import headshot from '../assets/output.jpg';
-import ScrollDownArrow from '../components/ScrollDownArrow';
-import blockWrapper from '../blockWrapper';
+import blockWrapper from '../wrappers/blockWrapper';
 
 const About = () => {
   return (
@@ -18,4 +17,4 @@ const About = () => {
   )
 }
 
-export default blockWrapper(About, 'tl');
+export default blockWrapper(About);

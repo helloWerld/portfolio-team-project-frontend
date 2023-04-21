@@ -1,26 +1,9 @@
 import React from 'react';
-import blockWrapper from '../blockWrapper';
+import blockWrapper from '../wrappers/blockWrapper';
 import ExperienceCardList from '../components/ExperienceCardList';
+import SkillsBars from '../components/SkillsBars';
 
 const Skills = () => {
-  const skills = [
-    {
-      name: 'Front End',
-      level: '92'
-    },
-    {
-      name:'Back End',
-      level: '83'
-    },
-    {
-      name: 'React JS',
-      level: '71'
-    },
-    {
-      name: 'Angular',
-      level: '62'
-    }
-  ];
 
   return (
     <div className='flex flex-col w-full h-full lg:flex-row items-center justify-center'>
@@ -30,15 +13,8 @@ const Skills = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit orci sit amet convallis semper.
             </p>
           </div>
-          <div className='flex flex-col w-full lg:w-1/2 text-white gap-8 mt-8'>
-            <div className='flex flex-col w-11/12 gap-3'>
-              {skills.map((skill) => (
-                <div className='flex flex-col w-full' key={skill.name}>
-                  <h3 className='w-full'>{skill.name}</h3>
-                  <div className={`h-2 w-[${skill.level}%] bg-gradient-to-r from-indigo-600 via-purple-600 to-rose-600 rounded-full`}></div>
-                </div>
-              ))}
-            </div>
+          <div className='flex flex-col lg:w-1/2 text-white gap-8 mt-8'>
+            <SkillsBars />
             <ExperienceCardList />
         </div>
     </div>
@@ -46,4 +22,4 @@ const Skills = () => {
   )
 }
 
-export default blockWrapper(Skills, 'tr')
+export default blockWrapper(Skills)

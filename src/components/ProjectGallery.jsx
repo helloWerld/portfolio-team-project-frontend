@@ -50,18 +50,14 @@ const ProjectGallery = () => {
   const cardSliderRef = useRef(null); 
 
   return (
-    <div className='flex flex-col relative w-full gap-3 bg-black pt-3' >
-      {/* <div className='flex flex-row mb-8 ml-12 md:ml-32 2xl:ml-48 justify-start gap-5 text-white'>
-        <AiOutlineCaretLeft className='text-2xl cursor-pointer' onClick={() => { cardSliderRef.current.scrollLeft -= 250 }} />
-        <AiOutlineCaretRight className='text-2xl cursor-pointer' onClick={() => { cardSliderRef.current.scrollLeft += 250 }} />
-      </div> */}
+    <div className='flex flex-col relative w-full h-fit gap-3 bg-black pt-3' >
       <div className='flex flex-row w-full h-full text-white justify-between py-auto items-center justify-between px-12'>
-        <AiOutlineCaretLeft className='text-4xl cursor-pointer rounded-full bg-transparent hover:bg-white hover:text-black pr-1' onClick={() => { cardSliderRef.current.scrollLeft -= 250 }} />
-        <AiOutlineCaretRight className='text-4xl cursor-pointer rounded-full bg-transparent hover:bg-white hover:text-black pl-1' onClick={() => { cardSliderRef.current.scrollLeft += 250 }} />
+        <AiOutlineCaretLeft className='text-4xl cursor-pointer rounded-full bg-transparent hover:bg-white hover:text-black pr-1' onClick={() => { cardSliderRef.current.scrollLeft -= 750 }} />
+        <AiOutlineCaretRight className='text-4xl cursor-pointer rounded-full bg-transparent hover:bg-white hover:text-black pl-1' onClick={() => { cardSliderRef.current.scrollLeft += 750 }} />
       </div>
-      <div className='flex flex-row gap-3 overflow-x-scroll scrollbar-hide scroll-smooth' ref={cardSliderRef}>
+      <div className='flex flex-row gap-3 h-96 2xl:h-110 overflow-x-scroll scrollbar-hide scroll-smooth' ref={cardSliderRef}>
         {projects.map((project) => (
-          <img src={project.image} className='flex w-full object-cover hover:scale-105 transition duration-300 ease-in-out' key={project.name} />
+          <img src={project.image} className='flex h-full object-cover hover:scale-105 transition duration-300 ease-in-out' key={project.name} />
         ))}
       </div>
     </div>

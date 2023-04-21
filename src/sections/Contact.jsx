@@ -18,7 +18,7 @@ const Contact = () => {
           <div className='w-2/3 '>
             <textarea type="text" className='w-full h-40 px-3 py-2 bg-transparent border border-white rounded-xl text-white' placeholder='Message'></textarea>
           </div>
-          <buttom type='submit' className='bg-gradient-to-r from-indigo-600 via-purple-600 to-rose-600 text-black text-lg px-3 py-2 w-1/6 text-center rounded-lg cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-indigo-600/30'>Submit</buttom>
+          <buttom type='submit' className='bg-gradient-to-r from-indigo-600 via-purple-600 to-rose-600 text-black text-lg px-3 py-2 w-fit text-center rounded-lg cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-indigo-600/30'>Submit</buttom>
         </form>
       </div>
       <div className='w-full h-1/2 lg:w-1/2 lg:h-screen border-4 absolute bottom-0 left-0 right-0 lg:right-0 lg:left-auto'>

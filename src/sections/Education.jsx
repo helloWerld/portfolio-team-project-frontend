@@ -1,7 +1,7 @@
 import React from 'react';
 import react from '../assets/react.svg';
 import blockWrapper from '../wrappers/blockWrapper';
-import EducationCardList from '../components/EducationCardList';
+import { EducationCardList } from '../components';
 
 const Education = () => {
   

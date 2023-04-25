@@ -1,7 +1,6 @@
 import React from 'react';
 import blockWrapper from '../wrappers/blockWrapper';
-import ExperienceCardList from '../components/ExperienceCardList';
-import SkillsBars from '../components/SkillsBars';
+import { SkillsBars, ExperienceCardList } from '../components';
 
 const Skills = () => {
 

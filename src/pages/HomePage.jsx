@@ -1,8 +1,7 @@
 import React from 'react';
 import { Hero, About, Skills, Portfolio, Education, Contact } from '../sections';
-import HamburgerMenu from '../components/HamburgerMenu';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import { Navbar, Footer, HamburgerMenu } from '../components';
+
 
 const HomePage = () => {
   return (

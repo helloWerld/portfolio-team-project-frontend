@@ -67,7 +67,7 @@ const EducationCardList = () => {
   return (
     <div className='flex flex-row items-center justify-center lg:justify-center w-full gap-3 flex-wrap'>
       {educations.map((education) => (
-        <div key={education.certification}  className='flex flex-col items-center 2xl:gap-1 justify-center w-fit h-fit border border-white rounded-2xl text-white py-1 px-2 md:py-2 md:px-3 transition duration-300 ease-in-out hover:bg-black hover:scale-125 hover:shadow-lg hover:shadow-indigo-300/10'>
+        <div key={education.certification}  className='flex flex-col items-center 2xl:gap-1 justify-center w-fit h-fit border border-white rounded-2xl text-white py-1 px-2 md:py-2 md:px-3 transition duration-300 ease-in-out hover:bg-black hover:scale-125 hover:shadow-lg hover:shadow-indigo-300/10 cursor-pointer'>
           <h2 className='text-md 2xl:text-xl font-semibold'>{education.certification}</h2>
           <p className='text-xs 2xl:text-md'>{education.institution} - {education.date_issued}</p>
         </div>
